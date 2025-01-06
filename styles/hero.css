@@ -13,13 +13,15 @@ section.hero {
   }
 
   & h1 span:nth-child(1),
-  & h1 span:nth-child(4){
+  & h1 span:nth-child(4) {
     color: var(--sniptap-sky-mid);
   }
-  & h1 span:nth-child(2){
+
+  & h1 span:nth-child(2) {
     color: var(--sniptap-joy-mid);
   }
-  & h1 span:nth-child(3){
+
+  & h1 span:nth-child(3) {
     color: var(--sniptap-leaf-mid);
   }
 
@@ -28,21 +30,64 @@ section.hero {
 
     animation: slideUp 6s infinite ease;
   }
+
+  /* buttons */
+  & .buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+
+    & .button {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+
+      border-radius: 5rem;
+
+      transition: 350ms;
+
+      &.buy {
+        padding: 1.5rem 3rem;
+        background-color: var(--sniptap-sun);
+      }
+
+      &.play span {
+        padding: 1.5rem;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    & .shadow {
+      box-shadow:
+        0 2px 5px rgb(0 0 0 / .1),
+        0 9px 9px rgb(0 0 0 / .09),
+        0 20px 12px rgb(0 0 0 / .05),
+        0 36px 15px rgb(0 0 0 / .01);
+    }
+  }
 }
 
 @keyframes slideUp {
 
   /* radical static */
-  0%, 22% {
+  0%,
+  22% {
     transform: translateY(0);
   }
+
   /* divertida in */
   23% {
     transform: translateY(calc(-5rem - 15px));
   }
 
   25% {
-    transform: translateY(calc(-5rem + 10px)) ;
+    transform: translateY(calc(-5rem + 10px));
   }
 
   27% {
@@ -52,18 +97,20 @@ section.hero {
   29% {
     transform: translateY(calc(-5rem + 5px));
   }
-  
+
   /* divertida static */
-  33%, 55% {
+  33%,
+  55% {
     transform: translateY(-5rem);
   }
+
   /* divertida in */
   56% {
     transform: translateY(calc(-10rem - 15px));
   }
 
   58% {
-    transform: translateY(calc(-10rem + 10px)) ;
+    transform: translateY(calc(-10rem + 10px));
   }
 
   60% {
@@ -74,27 +121,32 @@ section.hero {
     transform: translateY(calc(-10rem + 5px));
   }
 
-  
- /* Saudável static */
- 66%, 75% {
-  transform: translateY(-10rem);
-}
 
-/* Saudável in */
-76% {
-  transform: translateY(calc(-15rem - 15px));
-}
-78% {
-  transform: translateY(calc(-15rem + 10px));
-}
-80% {
-  transform: translateY(calc(-15rem - 5px));
-}
-82% {
-  transform: translateY(calc(-15rem + 5px));
-}
+  /* Saudável static */
+  66%,
+  75% {
+    transform: translateY(-10rem);
+  }
 
-83%, 100% {
-  transform: translateY(-15rem);
-}
+  /* Saudável in */
+  76% {
+    transform: translateY(calc(-15rem - 15px));
+  }
+
+  78% {
+    transform: translateY(calc(-15rem + 10px));
+  }
+
+  80% {
+    transform: translateY(calc(-15rem - 5px));
+  }
+
+  82% {
+    transform: translateY(calc(-15rem + 5px));
+  }
+
+  83%,
+  100% {
+    transform: translateY(-15rem);
+  }
 }
