@@ -116,4 +116,21 @@ section.gallery {
   }
 }
 
+@media (width < 80em) {
+  section.gallery {
+    & .content {
+      display: grid;
+      grid-template-areas: 
+        "A"
+        "B"
+        "C"
+        "D"; 
+      gap: 2.5rem; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: auto; 
+    }
+  }
+}
+
+
 
