@@ -19,8 +19,8 @@
   .bg-gradient-animate {
     background: linear-gradient(
       45deg,
-      var(--sniptap-sky-light),
-      var(--sniptap-joy-light)
+      var(--snitap-sky-light),
+      var(--snitap-joy-light)
     );
     background-size: 400%;
     background-position: 0 50%;

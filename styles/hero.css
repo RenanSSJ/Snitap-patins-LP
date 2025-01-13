@@ -19,15 +19,15 @@ section.hero {
 
   & h1 span:nth-child(1),
   & h1 span:nth-child(4) {
-    color: var(--sniptap-sky-mid);
+    color: var(--snitap-sky-mid);
   }
 
   & h1 span:nth-child(2) {
-    color: var(--sniptap-joy-mid);
+    color: var(--snitap-joy-mid);
   }
 
   & h1 span:nth-child(3) {
-    color: var(--sniptap-leaf-mid);
+    color: var(--snitap-leaf-mid);
   }
 
   & h1 span {
@@ -53,7 +53,7 @@ section.hero {
 
       &.buy {
         padding: 1.5rem 3rem;
-        background-color: var(--sniptap-sun);
+        background-color: var(--snitap-sun);
       }
 
       &.play span {
