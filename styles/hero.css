@@ -85,10 +85,10 @@ section.hero {
     max-width: 30.5rem;
     height: 30.5rem;
 
-    border: 2px deeppink solid;
+    
 
     & .content {
-      border: 2px black solid;
+      
       width: 100%;
       height: 100%;
       position: relative;
