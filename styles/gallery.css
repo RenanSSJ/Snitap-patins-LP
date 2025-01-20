@@ -40,7 +40,7 @@ section.gallery {
     animation-range: 100px 300px;
 
     &[data-delay] {
-      animation-range: 150px 3500px;
+      animation-range: 150px 350px;
     }
 
     & > img {
